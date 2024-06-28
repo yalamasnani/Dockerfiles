@@ -1,6 +1,6 @@
 FROM almalinux:8
 RUN yum update -y
-RUN yum install nginx 
+RUN yum install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
 COPY C:\terraform-course\Dockerfiles\COPY /usr/share/nginx/html/
-CMD [" nginx", "-g" ,"deamon;"]
+CMD [" nginx", "-g" ,"daemon off;"] 
