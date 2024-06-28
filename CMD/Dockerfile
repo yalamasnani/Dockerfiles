@@ -1,4 +1,4 @@
 FROM almalinux:8.10
 RUN yum update -y
 RUN yum install nginx -y
-CMD [ "sleep","15" ]
+CMD [ "nginx","-g" "deamon off ;" ]
